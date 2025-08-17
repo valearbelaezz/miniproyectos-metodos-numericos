@@ -16,9 +16,19 @@ Incluye implementaciones en **Python** y documentación en **LaTeX** sobre disti
 
 ## ⚙️ Configuración del ambiente virtual
 
-Para ejecutar los proyectos en **Python**, se recomienda usar un ambiente virtual como Visual Studio Code.
+Para ejecutar los proyectos en **Python**, se recomienda usar un ambiente virtual.
 
 1. **Clonar el repositorio**
    ```bash
    git clone https://github.com/usuario/miniproyectos-metodos-numericos.git
    cd miniproyectos-metodos-numericos
+2**ambiente virtal**
+Para crear el ambiente virtual, primero abre la terminal (CMD o PowerShell) dentro de la carpeta del proyecto y ejecuta el comando:
+python -m venv venv.
+Esto generará una carpeta llamada venv donde se guardará el entorno.
+
+Luego, debes activar el ambiente virtual. Si usas CMD, escribe venv\Scripts\activate, y si usas PowerShell, escribe .\venv\Scripts\Activate. Una vez activado, en la terminal aparecerá un prefijo (venv) al inicio de la línea, indicando que estás dentro del entorno virtual.
+
+Con el ambiente ya activo, procede a instalar las librerías necesarias para el proyecto. Si el repositorio incluye un archivo requirements.txt, basta con ejecutar pip install -r requirements.txt. En caso de que no exista, puedes instalar manualmente las librerías principales con el comando pip install numpy matplotlib pillow.
+
+Una vez instaladas, podrás ejecutar los scripts del proyecto normalmente.

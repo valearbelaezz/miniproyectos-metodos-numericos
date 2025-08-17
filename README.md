@@ -22,7 +22,7 @@ Para ejecutar los proyectos en **Python**, se recomienda usar un ambiente virtua
    ```bash
    git clone https://github.com/usuario/miniproyectos-metodos-numericos.git
    cd miniproyectos-metodos-numericos
-2**ambiente virtal**
+2. **Ambiente virtual**
 Para crear el ambiente virtual, primero abre la terminal (CMD o PowerShell) dentro de la carpeta del proyecto y ejecuta el comando:
 python -m venv venv.
 Esto generará una carpeta llamada venv donde se guardará el entorno.

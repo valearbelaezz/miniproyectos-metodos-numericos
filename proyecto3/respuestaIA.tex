@@ -70,6 +70,22 @@ J = \begin{pmatrix}
 \]
 
 Un cuadrado de $1 \times 1$ en $(\xi,\eta)$ se convierte en un rectángulo de $2 \times 3$ en $(x,y)$, con área 6 veces mayor.
+\subsection{Ejemplo Avanzado}
+\begin{minipage}{\dimexpr\textwidth-2\fboxsep}
+\begin{align*}
+x &= \xi\cos\eta \\
+y &= \xi\sin\eta
+\end{align*}
+Jacobiano en coordenadas polares:
+\[
+J = \begin{pmatrix}
+\cos\eta & -\xi\sin\eta \\
+\sin\eta & \xi\cos\eta
+\end{pmatrix}, \quad |J| = \xi
+\]
+Interpretación: El factor $\xi$ explica por qué anillos más alejados del origen (mayor $\xi$) tienen mayor área.
+\end{minipage}
+
 
 \section{¡Cuidado!}
 

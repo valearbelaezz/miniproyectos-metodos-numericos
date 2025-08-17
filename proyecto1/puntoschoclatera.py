@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 # === 1. Cargar y rotar la imagen ===
 # Se abre la imagen 
-image_path = "C:/Users/maria/OneDrive/Escritorio/proyecto 1/imagen_Chocolatera.png"// pon su ruta de acceso al descargar la imagen_Chocolatera.png
+image_path = "C:/Users/maria/miniproyectos-metodos-numericos/imagen_Chocolatera.png"// pon su ruta de acceso al abrir el archivo clonado la imagen_Chocolatera.png
 image = Image.open(image_path)
 
 # Se rota la imagen 90° en sentido antihorario.
@@ -55,4 +55,5 @@ ax.grid(True)             # Mostrar cuadrícula para referencia
 
 # Mostrar la figura final
 plt.show()
+
 

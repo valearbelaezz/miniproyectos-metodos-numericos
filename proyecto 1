@@ -1,4 +1,6 @@
-proyecto4/
- ├── analisis_imagen.py
+proyecto1/
+ ├── puntoschocolatera.py
  └── imagen_Chocolatera.png
+ └── interpolacionchocolatera.py
+
 

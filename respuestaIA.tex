@@ -1,0 +1,70 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\title{Explicación del Jacobiano para Cambios de Variable}
+
+\begin{document}
+
+\maketitle
+
+\section{¿Por qué $dx\,dy = |J|\,d\xi\,d\eta$?}
+
+Imagina que tienes un chicle cuadrado pegado en una mesa. Si lo estiras con tus dedos, el área que cubre cambia. Eso es exactamente lo que hace el Jacobiano: mide cómo se "estira" o "comprime" el área cuando cambiamos de variables.
+
+\section{El Jacobiano en 1 Minuto}
+
+El Jacobiano es una matriz que contiene todas las derivadas parciales:
+
+\[
+J = \begin{pmatrix}
+\frac{\partial x}{\partial \xi} & \frac{\partial x}{\partial \eta} \\
+\frac{\partial y}{\partial \xi} & \frac{\partial y}{\partial \eta}
+\end{pmatrix}
+\]
+
+Su determinante $|J|$ nos dice cuánto se escala el área:
+
+\begin{itemize}
+\item Si $|J| = 2$, el área se duplica (como estirar el chicle al doble)
+\item Si $|J| = 0.5$, el área se reduce a la mitad (como aplastar el chicle)
+\end{itemize}
+
+\section{Ejemplo Sencillo}
+
+Cambio de variables:
+\begin{align*}
+x &= 2\xi \\
+y &= 3\eta
+\end{align*}
+
+El Jacobiano es:
+\[
+J = \begin{pmatrix}
+2 & 0 \\
+0 & 3
+\end{pmatrix}, \quad |J| = 6
+\]
+
+Un cuadrado de $1 \times 1$ en $(\xi,\eta)$ se convierte en un rectángulo de $2 \times 3$ en $(x,y)$, con área 6 veces mayor.
+
+\section{¡Cuidado!}
+
+El error más común es olvidar el valor absoluto:
+\begin{itemize}
+\item El área siempre es positiva
+\item Si el determinante es negativo, usamos $|J|$ igual
+\end{itemize}
+
+\section{Resumen}
+
+\begin{center}
+\fbox{
+\begin{minipage}{0.9\textwidth}
+El Jacobiano corrige la distorsión del área cuando cambiamos de variables, como cuando estiramos un chicle. Solo recuerda usar su valor absoluto $|J|$.
+\end{minipage}
+}
+\end{center}
+
+\end{document}

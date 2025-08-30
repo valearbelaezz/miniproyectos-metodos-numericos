@@ -25,6 +25,4 @@ Para ejecutar los proyectos en **Python**, se recomienda usar un ambiente virtua
 2. **Ambiente virtual**
 
 Para replicar el ambiente virtual y poder utilizar los códigos del repositorio, se debe abrir una terminal en la carpeta donde se encuentran los archivos del proyecto. Desde allí, se crea un entorno con la herramienta venv y se activa con el comando venv\Scripts\activate en Windows o source venv/bin/activate en Linux/Mac. Con el entorno ya activo, se instalan las librerías necesarias ejecutando pip install -r requirements.txt.
-Con el ambiente ya activo, procede a instalar las librerías necesarias para el proyecto. Si el repositorio incluye un archivo requirements.txt, basta con ejecutar pip install -r requirements.txt. En caso de que no exista, puedes instalar manualmente las librerías principales con el comando pip install numpy matplotlib pillow.
-
 Una vez instaladas, podrás ejecutar los scripts del proyecto normalmente.

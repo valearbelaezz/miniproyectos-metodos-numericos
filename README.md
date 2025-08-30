@@ -24,11 +24,7 @@ Para ejecutar los proyectos en **Python**, se recomienda usar un ambiente virtua
    cd miniproyectos-metodos-numericos
 2. **Ambiente virtual**
 
-Para crear el ambiente virtual, primero abre la terminal (CMD o PowerShell) dentro de la carpeta del proyecto y ejecuta el comando:
-python -m venv venv.
-Esto generará una carpeta llamada venv donde se guardará el entorno.
-
-Luego, debes activar el ambiente virtual. Si usas CMD, escribe venv\Scripts\activate, y si usas PowerShell, escribe .\venv\Scripts\Activate. Una vez activado, en la terminal aparecerá un prefijo (venv) al inicio de la línea, indicando que estás dentro del entorno virtual.
+Para replicar el ambiente virtual, primero se debe crear un entorno con la herramienta venv en la misma carpeta donde estén los códigos y el archivo requirements.txt. Una vez creado, se debe activar el ambiente: en Windows con venv\Scripts\activate y en Linux/Mac con source venv/bin/activate. Luego, se instalan las librerías necesarias ejecutando el comando pip install -r requirements.txt.
 
 Con el ambiente ya activo, procede a instalar las librerías necesarias para el proyecto. Si el repositorio incluye un archivo requirements.txt, basta con ejecutar pip install -r requirements.txt. En caso de que no exista, puedes instalar manualmente las librerías principales con el comando pip install numpy matplotlib pillow.
 

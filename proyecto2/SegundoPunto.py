@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 #Parámetros iniciales
 a = 1       # Constante de decaimiento
 I = 1       # Condición inicial
-t_max = 1    # Tiempo máximo de simulación
+t_max = 5    # Tiempo máximo de simulación
 dt_values = [0.01, 0.05, 0.1, 0.5, 1.0, 1.5]  # Diferentes Δt para probar
 
 #Sln exacta
@@ -131,8 +131,5 @@ plot_comparison(dt_values)
 # 2. Calcular errores
 errors_fe, errors_cn, errors_be = compute_errors(dt_values)
 
-# 3. Graficar errores
-plot_error(dt_values, errors_fe, errors_cn, errors_be)
-
-# 4. Graficar log-log y obtener pendientes
+# 3. Graficar log-log y obtener pendientes
 plot_loglog_and_slope(dt_values, errors_fe, errors_cn, errors_be)

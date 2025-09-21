@@ -6,11 +6,13 @@ def main():
     # Parameters and constants
     Lx = 8
     Ly = 6
-    n_nodos_y = 90
-    n_nodos_x = 70
+    n_nodos_y = 50
+    n_nodos_x = 100
     Vp1 = 4
     Vp2 = -2
     max_iter = 5000
+    dx = Lx / (n_nodos_x - 1)
+    dy = Ly / (n_nodos_y - 1)
 
     # mesh grid
     x = np.linspace(0, Lx, n_nodos_x)
@@ -35,7 +37,7 @@ def main():
             for j in range(1, n_nodos_y - 1):
                 if j in [j1, j2]:   # skip plates (fixed values)
                     continue
-                V_new[i, j] = 0.25 * (V[i+1, j] + V[i-1, j] + V[i, j+1] + V[i, j-1])
+                V_new[i, j] = (dy**2 * (V[i+1, j] + V[i-1, j]) + dx**2 * (V[i, j+1] + V[i, j-1])) / (2 * (dx**2 + dy**2))
 
         # rewrite conditions in V array (border = 0)
         V_new[0, :] = 0     # y = 0
@@ -74,3 +76,4 @@ plt.title("Potential Distribution in Capacitor (Jacobi Method)")
 plt.legend()
 plt.gca().set_aspect("equal")
 plt.show()
+

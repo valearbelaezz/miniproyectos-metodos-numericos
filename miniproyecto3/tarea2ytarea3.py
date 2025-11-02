@@ -237,3 +237,4 @@ plt.grid(True, alpha=0.3)
 plt.show()
 
 print("\nTAREA 3 completada con N=100 muestras.")
+
